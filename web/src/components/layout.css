@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap");
 
 :root {
-  --main-color: #E2231A;
+  --main-color: #e2231a;
   --main-background-color: #171520;
   --secondary-background-color: #2c3545;
   --footer-color: #0c0c0f;
 
-  --main-font: 'Roboto', sans-serif;
+  --main-font: "Roboto", sans-serif;
   --header-color: white;
   --text-color: #e4e4e4;
   --light-text-color: #bebebe;
@@ -31,10 +31,6 @@ p {
   margin: 0;
 }
 
-
-
-
-
 /* ============= Misc Helper classes ============= */
 .remove-bullets {
   list-style: none;
@@ -51,10 +47,6 @@ p {
     display: block;
   }
 }
-
-
-
-
 
 /* ============= BASIC ELEMENTS ============= */
 body {
@@ -85,11 +77,6 @@ header {
 nav {
   position: fixed;
 }
-
-
-
-
-
 
 /* ============= TYPOGRAPHY ============= */
 h1,
@@ -123,23 +110,14 @@ section h2 {
   margin-bottom: 1em;
 }
 
-
-
-
-
-
 /* ============= SECTION COLORS ============= */
-section:nth-child(2n+2) {
+section:nth-child(2n + 2) {
   background-color: var(--secondary-background-color);
 }
 
 footer {
   background-color: var(--footer-color);
 }
-
-
-
-
 
 /* ============= SECTION SPACING ============= */
 header,
@@ -160,10 +138,6 @@ header {
 nav {
   width: 95vw;
 }
-
-
-
-
 
 .container {
   margin: 0 auto;
@@ -195,10 +169,6 @@ nav {
   }
 }
 
-
-
-
-
 footer {
   padding: 10rem 3rem;
 }
@@ -215,10 +185,6 @@ footer {
     padding: 10rem;
   }
 }
-
-
-
-
 
 /* ============= JOIN BUTTON ============= */
 .join-button-container {
@@ -237,10 +203,6 @@ footer {
   color: white;
   background-color: #ff3e34;
 }
-
-
-
-
 
 /* ============= EVENT CARD ============= */
 .eventcard-container {
@@ -279,10 +241,6 @@ footer {
     align-items: center;
   }
 }
-
-
-
-
 
 /* ============= BLOG CARD ============= */
 .blogcard-container {
@@ -329,10 +287,6 @@ footer {
   }
 }
 
-
-
-
-
 /* ============= MEMBER CARD ============= */
 .membercard-container {
   display: flex;
@@ -357,9 +311,9 @@ footer {
   margin: 2rem 0;
 }
 .membercard-header {
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .membercard-header > img {
   border-radius: 50%;
@@ -391,10 +345,6 @@ footer {
     text-align: left;
   }
 }
-
-
-
-
 
 /* ============= CONTACT LINKS ============= */
 .contact-container {
