@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+
+:root {
+  --main-color: #E2231A;
+  --main-background-color: #171520;
+  --secondary-background-color: #2c3545;
+  --footer-color: #0c0c0f;
+
+  --main-font: 'Roboto', sans-serif;
+  --header-color: white;
+  --text-color: #e4e4e4;
+  --light-text-color: #bebebe;
+
+  --card-section-divider: 2px solid rgba(128, 128, 128, 0.5);
+  --shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ============= Setup ============= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+
+
+
+
+/* ============= Misc Helper classes ============= */
+.remove-bullets {
+  list-style: none;
+  padding: 0;
+}
+.text-center {
+  text-align: center;
+}
+.no-mobile {
+  display: none;
+}
+@media (min-width: 60em) {
+  .no-mobile {
+    display: block;
+  }
+}
+
+
+
+
+
+/* ============= BASIC ELEMENTS ============= */
+body {
+  margin: 0;
+
+  background-color: var(--main-background-color);
+
+  color: var(--text-color);
+  font-family: var(--main-font);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  background-image: url("https://lblend.moe/temp/uiogaming/assets/img/keyboard.jpg"); /* Placeholder image */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+nav {
+  position: fixed;
+}
+
+
+
+
+
+
+/* ============= TYPOGRAPHY ============= */
+h1,
+h2,
+h3 {
+  color: var(--header-color);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+p {
+  max-width: 60ch;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+a:hover {
+  color: #ff9da0;
+}
+
+section h2 {
+  font-size: 3.25rem;
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
+  margin-bottom: 1em;
+}
+
+
+
+
+
+
+/* ============= SECTION COLORS ============= */
+section:nth-child(2n+2) {
+  background-color: var(--secondary-background-color);
+}
+
+footer {
+  background-color: var(--footer-color);
+}
+
+
+
+
+
+/* ============= SECTION SPACING ============= */
+header,
+section {
+  padding: 7em 1em;
+}
+@media (min-width: 60em) {
+  header,
+  section {
+    padding: 10em 5em;
+  }
+}
+
+header {
+  height: 100vh;
+}
+
+nav {
+  width: 95vw;
+}
+
+
+
+
+
+.container {
+  margin: 0 auto;
+  width: min(90%, 100rem);
+}
+.container > h2 {
+  margin-bottom: 2.5em;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: stretch;
+}
+.split-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 60em) {
+  .split {
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+}
+
+
+
+
+
+footer {
+  padding: 10rem 3rem;
+}
+.footer-container {
+  align-items: center;
+  justify-content: center;
+}
+.footer-container > .split {
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 60em) {
+  footer {
+    padding: 10rem;
+  }
+}
+
+
+
+
+
+/* ============= JOIN BUTTON ============= */
+.join-button-container {
+  margin: 3.5rem 0;
+  font-size: 2rem;
+}
+.join-button {
+  background-color: var(--main-color);
+
+  padding: 0.5em 1em;
+  border-radius: 15em;
+
+  color: var(--text-color);
+}
+.join-button:hover {
+  color: white;
+  background-color: #ff3e34;
+}
+
+
+
+
+
+/* ============= EVENT CARD ============= */
+.eventcard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.eventcard {
+  box-shadow: var(--shadow);
+  background-color: var(--main-background-color);
+  padding: 2em;
+  max-width: 50ch;
+  border-top: 4px solid var(--main-color);
+}
+.eventcard > * {
+  flex-basis: 100%;
+  color: white;
+}
+.eventcard > h3 {
+  margin-bottom: 0.5em;
+}
+.eventcard > div {
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+.eventcard > div * {
+  display: flex;
+  align-items: baseline;
+  margin-right: 0.5em;
+}
+@media (min-width: 60em) {
+  .eventcard-container {
+    gap: 4rem;
+  }
+  .eventcard > div * {
+    align-items: center;
+  }
+}
+
+
+
+
+
+/* ============= BLOG CARD ============= */
+.blogcard-container {
+  flex-direction: column;
+  align-items: center;
+}
+.blogcard {
+  box-shadow: var(--shadow);
+  background-color: var(--secondary-background-color);
+  border-bottom: 4px solid var(--main-color);
+  align-items: flex-start;
+  display: flex;
+  gap: 2rem;
+  max-width: 80ch;
+}
+.blogcard > * {
+  flex-basis: 100%;
+  color: white;
+}
+.blogcard-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.blogcard-author {
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+.blogcard-author > img {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+@media (min-width: 60em) {
+  .blogcard {
+    flex-direction: row;
+    border-left: 4px solid var(--main-color);
+    border-bottom: none;
+  }
+  .blogcard-content {
+    padding: 2rem 0;
+  }
+}
+
+
+
+
+
+/* ============= MEMBER CARD ============= */
+.membercard-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 7rem;
+}
+.membercard {
+  box-shadow: var(--shadow);
+  background-color: var(--main-background-color);
+  border-radius: 2.5rem;
+  padding: 3rem 2rem;
+
+  min-width: 20ch;
+  width: 35ch;
+
+  display: flex;
+  flex-direction: column;
+}
+.membercard > p {
+  margin: 2rem 0;
+}
+.membercard-header {
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.membercard-header > img {
+  border-radius: 50%;
+  border: 5px solid white;
+  /* box-shadow: inset 0 0 10px #000000; */
+}
+.membercard-header-info {
+  border-bottom: var(--card-section-divider);
+  color: var(--text-color);
+  text-align: center;
+}
+.membercard-header-info > p {
+  font-weight: 100;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+.membercard-header-info > h3 {
+  margin: 0.5rem 0;
+}
+.membercard-footer {
+  border-top: var(--card-section-divider);
+}
+.membercard-footer > p {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+@media (min-width: 60em) {
+  .membercard-header-info {
+    text-align: left;
+  }
+}
+
+
+
+
+
+/* ============= CONTACT LINKS ============= */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contact {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
