@@ -49,10 +49,10 @@ export const query = graphql`
         }
       }
     }
-    allSanityEvent(sort: { fields: date, order: ASC }, limit: 2) {
+    allSanityEvent(sort: { fields: date, order: ASC }) {
       edges {
         node {
-          date(formatString: "dddd D. MMMM - HH:MM", locale: "nb_no")
+          date
           title
           location
           slug {
@@ -152,24 +152,35 @@ const IndexPage = ({ data }) => (
           <div>
             <h2>Kommende Arrangementer</h2>
             <div className="eventcard-container">
-              {data.allSanityEvent.edges.map(({ node: event }) => (
-                <a href={"event/" + event.slug.current}>
-                  <article className="eventcard">
-                    <h3>{event.title}</h3>
-                    <div>
+              {data.allSanityEvent.edges
+                .filter(
+                  ({ node }) => new Date(node.date).getTime() > Date.now()
+                )
+                .map(({ node: event }) => (
+                  <a href={"event/" + event.slug.current}>
+                    <article className="eventcard">
+                      <h3>{event.title}</h3>
                       <div>
-                        <FaMapMarkerAlt />
-                        <p>{event.location}</p>
+                        <div>
+                          <FaMapMarkerAlt />
+                          <p>{event.location}</p>
+                        </div>
+                        <div>
+                          <FaCalendarAlt />
+                          <p>
+                            {new Date(event.date).toLocaleString("nb-NO", {
+                              weekday: "long",
+                              year: "numeric",
+                              month: "long",
+                              day: "numeric",
+                            })}
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <FaCalendarAlt />
-                        <p>{event.date}</p>
-                      </div>
-                    </div>
-                    <p>{event.body[0].children[0].text}</p>
-                  </article>
-                </a>
-              ))}
+                      <p>{event.body[0].children[0].text}</p>
+                    </article>
+                  </a>
+                ))}
             </div>
           </div>
 
