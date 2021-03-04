@@ -156,6 +156,7 @@ const IndexPage = ({ data }) => (
                 .filter(
                   ({ node }) => new Date(node.date).getTime() > Date.now()
                 )
+                .slice(0, 2)
                 .map(({ node: event }) => (
                   <a href={"event/" + event.slug.current}>
                     <article className="eventcard">
