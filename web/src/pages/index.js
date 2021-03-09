@@ -34,8 +34,6 @@ export const query = graphql`
           name
           boardMember
           email
-          github
-          phoneNumber
           role
           order
           bio {
