@@ -98,15 +98,13 @@ const IndexPage = ({ data }) => (
     <Nav />
 
     <header id="hjem" className="text-center">
-      <div className="container">
-        <div className="header-container">
-          <img src={logo} />
-          <h1>UiO Gaming</h1>
-          <p>
-            En hobbyforening som ønsker skape et sosialt miljø rundt gaming og
-            E-sport på UiO
-          </p>
-        </div>
+      <div className="header">
+        <img src={logo} />
+        <h1>UiO Gaming</h1>
+        <p>
+          En hobbyforening som ønsker skape et sosialt miljø rundt gaming og
+          E-sport på UiO
+        </p>
       </div>
     </header>
 

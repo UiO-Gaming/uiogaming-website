@@ -72,6 +72,9 @@ header {
   background-size: cover;
 
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -79,7 +82,6 @@ nav {
 }
 
 /* ============= TYPOGRAPHY ============= */
-h1,
 h2,
 h3 {
   color: var(--header-color);
@@ -120,12 +122,14 @@ footer {
 }
 
 /* ============= SECTION SPACING ============= */
-header,
+header {
+  padding: 1rem;
+  padding-bottom: 10vh;
+}
 section {
   padding: 7em 1em;
 }
 @media (min-width: 60em) {
-  header,
   section {
     padding: 10em 5em;
   }
@@ -133,6 +137,18 @@ section {
 
 header {
   height: 100vh;
+}
+.header {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+.header > p {
+  max-width: none;
+}
+.header > img {
+  max-block-size: 15rem;
 }
 
 nav {
