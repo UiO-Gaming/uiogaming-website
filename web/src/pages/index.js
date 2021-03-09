@@ -25,7 +25,10 @@ import {
 
 export const query = graphql`
   {
-    allSanityAuthor(filter: { boardMember: { eq: true } }) {
+    allSanityAuthor(
+      sort: { fields: order }
+      filter: { boardMember: { eq: true } }
+    ) {
       edges {
         node {
           name
@@ -34,6 +37,7 @@ export const query = graphql`
           github
           phoneNumber
           role
+          order
           bio {
             children {
               text

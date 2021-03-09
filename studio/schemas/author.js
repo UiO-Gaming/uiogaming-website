@@ -44,6 +44,12 @@ export default {
         },
       ],
     },
+    {
+      name: 'order',
+      title: 'Rekkefølge',
+      type: 'number',
+      hidden: true,
+    },
   ],
   preview: {
     select: {
