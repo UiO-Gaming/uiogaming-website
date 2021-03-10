@@ -10,7 +10,7 @@ import Nav from "../components/nav";
 
 /* Images */
 import logo from "../images/logo.jpg";
-import placeholderImage from "../images/placeholderImage.png";
+import placeholderImage from "../images/placeholderimage.png";
 
 /* Icons */
 import {
