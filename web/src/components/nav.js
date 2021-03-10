@@ -10,7 +10,7 @@ const Nav = () => (
           smooth={true}
           offset={50}
           duration={750}
-          onSetActive={true}
+          spy={true}
           smooth="easeInOutCubic"
         >
           Om
@@ -22,7 +22,7 @@ const Nav = () => (
           smooth={true}
           offset={50}
           duration={750}
-          onSetActive={true}
+          spy={true}
           smooth="easeInOutCubic"
         >
           Arrangmenter
@@ -34,7 +34,7 @@ const Nav = () => (
           smooth={true}
           offset={50}
           duration={750}
-          onSetActive={true}
+          spy={true}
           smooth="easeInOutCubic"
         >
           Blogg
@@ -46,7 +46,7 @@ const Nav = () => (
           smooth={true}
           offset={50}
           duration={750}
-          onSetActive={true}
+          spy={true}
           smooth="easeInOutCubic"
         >
           Styret
@@ -58,7 +58,7 @@ const Nav = () => (
           smooth={true}
           offset={50}
           duration={750}
-          onSetActive={true}
+          spy={true}
           smooth="easeInOutCubic"
         >
           Kontakt
