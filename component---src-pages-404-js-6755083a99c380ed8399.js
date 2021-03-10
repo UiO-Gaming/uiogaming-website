@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{w2l6:function(e,n,t){"use strict";t.r(n);var l=t("q1tI"),a=t.n(l),i=t("vrFN");n.default=function(){return a.a.createElement("main",null,a.a.createElement(i.a,{title:"404: Not found"}),a.a.createElement("h1",null,"404: Siden finnes ikke"),a.a.createElement("p",null,'Men du fant denne lille "hemmelige" meldingen finnes da 😁'),a.a.createElement("p",null,"Morn morn yeeet 😎"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-6755083a99c380ed8399.js.map
