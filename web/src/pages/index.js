@@ -95,7 +95,7 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Hjem" />
+    <SEO title="UiO Gaming" />
 
     <Nav />
 
