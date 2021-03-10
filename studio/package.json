@@ -1,11 +1,9 @@
 {
-  "name": "uiogaming",
+  "name": "uiogaming-backend",
   "private": true,
   "version": "1.0.0",
-  "description": "",
   "main": "package.json",
   "author": "LBlend <lblend@protonmail.com>",
-  "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build"
