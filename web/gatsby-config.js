@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `uiogaming-website`,
   siteMetadata: {
     title: `UiO Gaming`,
     description: `En hobbyforening som ønsker skape et sosialt miljø rundt gaming og E-sport på UiO`,
@@ -10,7 +11,7 @@ module.exports = {
       options: {
         projectId: `mmqlu667`,
         dataset: `production`,
-        graphqlTag: 'default',
+        graphqlTag: `default`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -39,4 +40,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
