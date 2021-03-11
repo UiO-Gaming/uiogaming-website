@@ -134,7 +134,7 @@ const IndexPage = ({ data }) => (
             <div className="join-button-container">
               <h3>Interessert?</h3>
               <a
-                href="https://discord.gg/556mseV"
+                href="https://discord.uiogaming.no"
                 target="_blank"
                 className="join-button"
               >
@@ -263,7 +263,7 @@ const IndexPage = ({ data }) => (
           </div>
           <div className="contact">
             <FaDiscord />
-            <a href="https://discord.gg/PqsgXbnds4" target="_blank">
+            <a href="https://discord.uiogaming.no" target="_blank">
               Discord
             </a>
           </div>
