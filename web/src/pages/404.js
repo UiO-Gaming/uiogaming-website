@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 
 const NotFoundPage = () => (
   <main>
@@ -9,6 +9,6 @@ const NotFoundPage = () => (
     <p>Men du fant denne lille "hemmelige" meldingen finnes da 😁</p>
     <p>Morn morn yeeet 😎</p>
   </main>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

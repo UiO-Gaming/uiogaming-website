@@ -1,15 +1,71 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-scroll";
 
 const Nav = () => (
   <nav>
     <ul className="nav-content remove-bullets">
-      <li><a href="#om">Om</a></li>
-      <li><a href="#arrangementer">Arrangmenter</a></li>
-      <li><a href="#blogg">Blogg</a></li>
-      <li><a href="#styret">Styret</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
+      <li>
+        <Link
+          to="om"
+          smooth={true}
+          offset={50}
+          duration={750}
+          spy={true}
+          smooth="easeInOutCubic"
+        >
+          Om
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="arrangementer"
+          smooth={true}
+          offset={50}
+          duration={750}
+          spy={true}
+          smooth="easeInOutCubic"
+        >
+          Arrangmenter
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="blogg"
+          smooth={true}
+          offset={50}
+          duration={750}
+          spy={true}
+          smooth="easeInOutCubic"
+        >
+          Blogg
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="styret"
+          smooth={true}
+          offset={50}
+          duration={750}
+          spy={true}
+          smooth="easeInOutCubic"
+        >
+          Styret
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="kontakt"
+          smooth={true}
+          offset={50}
+          duration={750}
+          spy={true}
+          smooth="easeInOutCubic"
+        >
+          Kontakt
+        </Link>
+      </li>
     </ul>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;

@@ -1,11 +1,9 @@
 {
-  "name": "uiogaming",
+  "name": "uiogaming-backend",
   "private": true,
   "version": "1.0.0",
-  "description": "",
   "main": "package.json",
   "author": "LBlend <lblend@protonmail.com>",
-  "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build"
@@ -23,7 +21,8 @@
     "@sanity/vision": "^2.2.6",
     "prop-types": "^15.7",
     "react": "^17.0",
-    "react-dom": "^17.0"
+    "react-dom": "^17.0",
+    "sanity-plugin-order-documents": "^0.0.12"
   },
   "devDependencies": {}
 }
