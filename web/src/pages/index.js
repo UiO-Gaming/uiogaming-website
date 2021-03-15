@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 /* Standard Components */
 import Layout from "../components/layout";
@@ -159,7 +159,7 @@ const IndexPage = ({ data }) => (
                 )
                 .slice(0, 2)
                 .map(({ node: event }) => (
-                  <a href={"event/" + event.slug.current}>
+                  <Link to={"event/" + event.slug.current}>
                     <article className="eventcard">
                       <h3>{event.title}</h3>
                       <div>
@@ -181,7 +181,7 @@ const IndexPage = ({ data }) => (
                       </div>
                       <p>{event.body[0].children[0].text}</p>
                     </article>
-                  </a>
+                  </Link>
                 ))}
             </div>
           </div>
@@ -199,7 +199,7 @@ const IndexPage = ({ data }) => (
 
         <div className="split blogcard-container">
           {data.allSanityPost.edges.map(({ node: post }) => (
-            <a href={"blog/" + post.slug.current}>
+            <Link to={"blog/" + post.slug.current}>
               <article className="split blogcard">
                 <div>
                   <img src={placeholderImage} />
@@ -217,10 +217,10 @@ const IndexPage = ({ data }) => (
                   <p>{post.excerpt}</p>
                 </div>
               </article>
-            </a>
+            </Link>
           ))}
 
-          <a href="/blog">Se alle blogginnlegg</a>
+          <Link to="/blog">Se alle blogginnlegg</Link>
         </div>
       </div>
     </section>
