@@ -136,6 +136,7 @@ const IndexPage = ({ data }) => (
               <a
                 href="https://discord.uiogaming.no"
                 target="_blank"
+                rel="noreferrer"
                 className="join-button"
               >
                 Bli med!
@@ -257,13 +258,21 @@ const IndexPage = ({ data }) => (
         <div className="contact-container">
           <div className="contact">
             <FaAt />
-            <a href="mailto:styret.uiogaming@gmail.com" target="_blank">
+            <a
+              href="mailto:styret.uiogaming@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               E-post
             </a>
           </div>
           <div className="contact">
             <FaDiscord />
-            <a href="https://discord.uiogaming.no" target="_blank">
+            <a
+              href="https://discord.uiogaming.no"
+              target="_blank"
+              rel="noreferrer"
+            >
               Discord
             </a>
           </div>
@@ -272,19 +281,28 @@ const IndexPage = ({ data }) => (
             <a
               href="https://www.facebook.com/UiO-Gaming-113445760510985"
               target="_blank"
+              rel="noreferrer"
             >
               Facebook
             </a>
           </div>
           <div className="contact">
             <FaInstagram />
-            <a href="https://www.instagram.com/uio_gaming/" target="_blank">
+            <a
+              href="https://www.instagram.com/uio_gaming/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Instagram
             </a>
           </div>
           <div className="contact">
             <FaGithub />
-            <a href="https://github.com/UiO-Gaming" target="_blank">
+            <a
+              href="https://github.com/UiO-Gaming"
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub
             </a>
           </div>
